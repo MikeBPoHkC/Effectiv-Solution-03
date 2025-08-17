@@ -51,9 +51,28 @@ a:focus-visible {
   margin: 0 0 24px;
 }
 
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* nav__logo */
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .nav__logo {
   font-family: "Raleway", sans-serif;
+  margin-right: 76px;
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.03em;
@@ -62,22 +81,31 @@ a:focus-visible {
   text-transform: uppercase;
 }
 
+.nav__logo,
 .logo-accent {
   color: #2e2f42;
 }
 
-/* nav__link */
+/* nav__link/nav_list/nav__item */
+
+.nav__list {
+  display: flex;
+  gap: 40px;
+}
+
 .nav__link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
   color: #2e2f42;
+  transition: color 0.2s ease;
 }
 
 /* nav__link:hover/focus/Tab */
 .nav__link:hover,
-.nav__link:focus {
+.nav__link:focus-visible {
   color: #404bbf;
 }
 
@@ -86,15 +114,22 @@ a:focus-visible {
   font-style: normal;
 }
 
+.contacts__list {
+  display: flex;
+  gap: 40px;
+}
+
 /* contacts__link */
 .contacts__link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 0.2s ease;
 }
+
 .contacts__link:hover,
-.contacts__link:focus {
+.contacts__link:focus-visible {
   color: #404bbf;
 }
 
