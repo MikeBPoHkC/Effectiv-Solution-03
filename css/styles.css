@@ -76,12 +76,11 @@ a:focus-visible {
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.03em;
-  color: var(--brand);
+  color: #4d5ae5;
   line-height: 1.17;
   text-transform: uppercase;
 }
 
-.nav__logo,
 .logo-accent {
   color: #2e2f42;
 }
@@ -135,6 +134,7 @@ a:focus-visible {
 
 /* Hero */
 .hero {
+  padding: 188px 0;
   background: var(--hero-bg);
   color: var(--white);
   text-align: center;
@@ -142,15 +142,23 @@ a:focus-visible {
 }
 
 .hero__title {
+  max-width: 496px;
+  text-align: center;
   color: var(--white);
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  margin: 24px 0 16px;
+  margin: 0 auto 48px;
 }
 
 /* Button */
 .btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -170,7 +178,7 @@ a:focus-visible {
   border-color: #404bbf;
 }
 
-/* Section title */
+/* Section title "Team" */
 .section-title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
