@@ -208,7 +208,8 @@ a:focus-visible {
 .benefits {
   background: var(--white);
   margin: 24px 0;
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .benefits__list {
@@ -219,6 +220,7 @@ a:focus-visible {
 .benefits__item {
   border: 1px solid transparent;
   margin: 0 0 16px;
+  margin-bottom: 72px;
 }
 
 .benefits__name {
@@ -243,13 +245,26 @@ a:focus-visible {
 .team {
   background-color: #f4f4fd;
   margin: 24px 0;
+  padding: 120px 0;
+}
+
+.team-title {
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
 }
 
 .team__item {
   border: 1px solid var(--border);
+  border-radius: 0 0 4px 4px;
   text-align: center;
   margin: 0 0 16px;
   background-color: #ffffff;
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .team__name {
@@ -259,13 +274,20 @@ a:focus-visible {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title);
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .team__role {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #434455;
   text-align: center;
+}
+
+.team__info {
+  padding: 32px 0;
 }
 
 /* Portfolio */
