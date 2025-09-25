@@ -31,6 +31,11 @@ h3 {
 ul {
   list-style: none;
   margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
 }
 
 a {
@@ -48,7 +53,6 @@ a:focus-visible {
 .header {
   border: 1px solid var(--border);
   background: var(--white);
-  margin: 0 0 24px;
 }
 
 .container {
@@ -93,13 +97,13 @@ a:focus-visible {
 }
 
 .nav__link {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
   color: #2e2f42;
-  transition: color 0.2s ease;
 }
 
 /* nav__link:hover/focus/Tab */
@@ -138,7 +142,6 @@ a:focus-visible {
   background: var(--hero-bg);
   color: var(--white);
   text-align: center;
-  margin: 48px 0;
 }
 
 .hero__title {
@@ -169,7 +172,7 @@ a:focus-visible {
 }
 .btn--primary {
   background-color: #4d5ae5;
-  border: 1px solid #4d5ae5;
+  border: none;
 }
 
 .btn--primary:hover,
@@ -180,14 +183,13 @@ a:focus-visible {
 
 /* Section title "Team" */
 .section-title {
-  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--title);
-  margin: 0 0 24px;
+  margin bottom: 72px;
 }
 
 /* Benefits/hidden */
@@ -207,7 +209,6 @@ a:focus-visible {
 
 .benefits {
   background: var(--white);
-  margin: 24px 0;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -218,9 +219,7 @@ a:focus-visible {
 }
 
 .benefits__item {
-  border: 1px solid transparent;
-  margin: 0 0 16px;
-  margin-bottom: 72px;
+  width: ((100%-72px) / 4);
 }
 
 .benefits__name {
@@ -233,7 +232,6 @@ a:focus-visible {
 }
 
 .benefits__text {
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -244,8 +242,12 @@ a:focus-visible {
 /* Team */
 .team {
   background-color: #f4f4fd;
-  margin: 24px 0;
   padding: 120px 0;
+}
+
+.team__list {
+  display: flex; 
+  gap: 24 px
 }
 
 .team-title {
@@ -259,16 +261,14 @@ a:focus-visible {
 }
 
 .team__item {
-  border: 1px solid var(--border);
   border-radius: 0 0 4px 4px;
   text-align: center;
-  margin: 0 0 16px;
   background-color: #ffffff;
   flex-basis: calc((100% - 72px) / 4);
 }
 
 .team__name {
-  margin: 16px 0 4px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -279,7 +279,8 @@ a:focus-visible {
 }
 
 .team__role {
-  font-size: 16px;
+  margin: 0;
+  font-size: 16px;  
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -341,12 +342,13 @@ a:focus-visible {
 
 /* Footer */
 .footer {
+  padding: 100px 0;
   background: #2e2f42;
-  text-align: left;
-  margin: 32px 0 0;
 }
 
 .footer__logo {
+  display: inline-block;
+  margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -361,7 +363,8 @@ a:focus-visible {
 }
 
 .footer__text {
-  margin: 8px 0 0;
+  margin: 0;
+  max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
