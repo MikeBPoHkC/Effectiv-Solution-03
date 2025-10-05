@@ -219,7 +219,7 @@ a:focus-visible {
 }
 
 .benefits__item {
-  width: ((100%-72px) / 4);
+  width: ((100% - 72px) / 4);
 }
 
 .benefits__name {
@@ -247,7 +247,7 @@ a:focus-visible {
 
 .team__list {
   display: flex;
-  gap: 24 px;
+  gap: 24px;
 }
 
 .team-title {
